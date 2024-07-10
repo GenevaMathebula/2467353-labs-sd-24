@@ -4,36 +4,108 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Congratulations Arinaho</title>
-    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
-    <style>
+     <style>
         body {
-            background-color: #000;
-            font-family: 'Arial', sans-serif;
             text-align: center;
             margin: 0;
             padding: 0;
         }
-        h1 {
-            font-family: 'Pacifico', cursive;
-            color: #0d3acd;
-            font-size: 60px;
-            margin-top: 60px;
-            text-shadow: 2px 2px #4527b1;
+        header {
+            background-color: black;
+            color: white;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            height: 50px;
+            width: 100%;
+            margin: 0;
+            padding: 0 20px;
         }
-        video {
+        .welcome_header {
+            font-weight: bold;
+            font-size: 20px;
+        }
+        nav {
+            text-align: start;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav li {
+            display: inline;
+            margin-right: 10px;
+        }
+        nav a {
+            text-decoration: none;
+            color: white;
+            font-size: 14px;
+        }
+        .goodmorning {
             display: block;
             margin: 50px auto;
             border: 5px solid #040406;
             border-radius: 10px;
             width: 600px;
+            object-fit: cover;
+            object-position: center;
+            margin-top: 100px;
+            margin-bottom: 0;
+        }
+        .congrats {
+            width: 150px;
+            height: auto;
+            border-radius: 10px;
+            position: absolute;
+            top: 60px;
+            left: 20px;
+        }
+        p {
+            color: white;
+        }
+        main {
+            text-align: center;
+            position: relative;
+        }
+        footer {
+            text-align: center;
+            background-color: black;
+            color: white;
+            height: 40px;
+            margin-top: 100px;
+        }
+        .footer_paragraph {
+            line-height: 40px;
+            margin: 0;
+            font-size: 13px;
         }
     </style>
 </head>
 <body>
-    <h1>Congratulations Arinaho!!!</h1>
-    <video src="good.mp4" controls autoplay></video>
-    <p>Congratulation Arinaho, Lol I know it's a bit late for 'Good morning' but i hope you had a great day Mr West!</p>
+    <header>
+        <p class="welcome_header">Welcome to Graduation!</p>
+        <nav>
+            <ul>
+                <li>
+                    <a href="">Good Morning</a>
+                </li>
+                <li>
+                    <a href="">o o o o ooh</a>
+                </li>
+                <li>
+                    <a href="">Good Morning</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <video class="congrats" src="congrats.mp4" autoplay muted loop></video>
+        <h1>Congratulations Arinaho!!!</h1>
+        <video class="goodmorning" src="good.mp4" controls autoplay muted></video>
+    </main>
 </body>
-<footer><p>Congratulation Arinaho, Lol I know it's a bit late for 'Good morning' but i hope you had a great day Mr West!</p>
+<footer>
+    <p class="footer_paragraph">Congratulations Arinaho, Lol I know it's a bit late for 'Good morning' but I hope you had a great day Mr. West!</p>
 </footer>
 </html>
